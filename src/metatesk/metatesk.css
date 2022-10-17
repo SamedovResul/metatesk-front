@@ -67,25 +67,36 @@
 
 
 .logo-image{
+  width: 5%;
+  margin: 5px 0px 5px 30px;
+}
+
+.metatesk-image{
   width: 10%;
-  margin: 5px auto 5px 30px;
+  margin: auto auto auto 40px;
 }
 
 @media(max-width:991px){
   .logo-image{
+    width: 10%;
+  }
+  .metatesk-image{
     width: 15%;
   }
 }
 
 @media(max-width:768px){
   .logo-image{
+    width: 10%;
+  }
+  .metatesk-image{
     width: 20%;
   }
 }
 
 @media(max-width:567px){
   .logo-image{
-    width: 30%;
+    width: 15%;
   }
 }
 
@@ -1234,6 +1245,11 @@ p:nth-of-type(2) {
   font-family: "Nunito";
   color: white;
   margin: 20px auto;
+}
+
+.add-section-Two 
+.text-box{
+  text-align: center;
 }
 
 .add-section-Two 
