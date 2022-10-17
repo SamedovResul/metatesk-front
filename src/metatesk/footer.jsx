@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container-fluid" >
         <div className="row">
           <div className="col-md-12">
-            <p>ALL right reserved</p>
+            <p>© All Rights Reserved</p>
           </div>
           {/* <div className="col-md-6 col-sm-6 col-6">
             <div className="ul-box">

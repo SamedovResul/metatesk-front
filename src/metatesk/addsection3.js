@@ -1,8 +1,12 @@
 import React from 'react'
 import sectionImg from './metaImg/sectionOnebg.jpeg'
-
+import {Element} from 'react-scroll'
 const Addsection3 = () => {
   return (
+    // <Element name="firstInsideContainer">
+    //         first element inside container
+    //       </Element>
+    <Element name="join" >
     <article className='metattesk-contact add-section-Three'>
     {/* <div className='png' ></div> */}
     <div  className="container">
@@ -30,6 +34,7 @@ const Addsection3 = () => {
       </div>
     </div>
   </article>
+  </Element>
   )
 }
 
