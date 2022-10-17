@@ -20,7 +20,7 @@ function App() {
   return (
     
       <Router>
-        <div className="App" onClick={() => boolean? setboolean(false) : setboolean(true) } >
+        <div className="App" onClick={() => boolean? setboolean(false) : null } >
         <Route path="/"  >
           <Navbar Boolean={{boolean, setboolean}} />
         </Route >

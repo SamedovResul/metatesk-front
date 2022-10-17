@@ -33,6 +33,11 @@
   align-items: center;
 }
 
+.navigation-div a{
+  width:200px;
+  height: 100%;
+}
+
 @media(max-width:768px){
   .navigation{
     display: none;
