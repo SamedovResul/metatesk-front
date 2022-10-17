@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import metateskLogo from './metaImg/metatesk-text-logo.png'
+import { useSpring, animated } from 'react-spring'
 import {Link} from 'react-scroll'
 
 
-const Navbar = () => {
+const Navbar = ({Boolean}) => {
+	const {boolean, setboolean} = Boolean
+
+	const burger = useSpring({
+		to:[{ right: boolean ? "0%" : "-50%" }],
+		from:{right: "-50%"}
+	})
+
+
 
 	return (
 		<section className='nav-section'>
@@ -15,12 +24,28 @@ const Navbar = () => {
 					<ul>
 						<li>home</li>
 						<li>
-							<Link to='join' smooth={true}  duration={500}>
+							<Link to='join' smooth={true}  duration={500} >
 								join 
 							</Link>
 						</li>
 					</ul>
 				</div>
+					<button className='open-burger' onClick={() => boolean? setboolean(false) : setboolean(true) } >
+						&#9776;
+					</button>
+				< animated.div style={burger}  className="responsive-navigation">
+					<button className='open-burger' onClick={() => boolean? setboolean(false) : setboolean(true) } >
+						&#9776;
+					</button>
+					<ul>
+						<li>home</li>
+						<li>
+							<Link to='join' smooth={true}  duration={500}>
+								join 
+							</Link>
+						</li>
+					</ul>
+				</animated.div>
 			</div>
 		</section>
 	)

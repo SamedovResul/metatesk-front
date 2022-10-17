@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './App.css';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +9,7 @@ import Navbar from "./metatesk/navbar";
 import Footer from "./metatesk/footer";
 
 function App() {
+  const [boolean, setboolean] = useState(false)
   var settings = {
     dots: true,
     infinite: true,
@@ -19,13 +20,13 @@ function App() {
   return (
     
       <Router>
-        <div className="App">
+        <div className="App" onClick={() => boolean? setboolean(false) : setboolean(true) } >
         <Route path="/"  >
-          <Navbar  />
+          <Navbar Boolean={{boolean, setboolean}} />
         </Route >
         <Switch>
           <Route path="/"  >
-            <Metatesk  />
+            <Metatesk Boolean={{boolean, setboolean}} />
           </Route >
         </Switch>
         <Route path="/"  >

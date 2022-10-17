@@ -15,9 +15,8 @@ import {useSpring,animated} from 'react-spring';
 // import FooterSection from '../homeFolder/footerSection';
 
 
-const Metatesk = (props) => {
-  let location = props.location
-
+const Metatesk = ({Boolean}) => {
+  const {boolean, setboolean} = Boolean
 
 
   const container = useSpring({
@@ -49,7 +48,7 @@ const Metatesk = (props) => {
       <Addsection2 />
       <SectionThree />
       <Addsection5 />
-      <Addsection3 />
+      <Addsection3 setboolean={setboolean} />
       {/* <SectionFour  myref={myref}/> */}
       
       {/* <Animation /> */}
