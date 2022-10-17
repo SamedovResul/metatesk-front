@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.navigation-div img{
+  width: 5%;
+}
+
 .navigation ul{
   display: flex;
   justify-content: center;
