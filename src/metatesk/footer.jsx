@@ -6,7 +6,10 @@ const Footer = () => {
     <div className="container">
       <div className="container-fluid" >
         <div className="row">
-          <div className="col-md-4 col-sm-6 col-6">
+          <div className="col-md-12">
+            <p>ALL right reserved</p>
+          </div>
+          {/* <div className="col-md-6 col-sm-6 col-6">
             <div className="ul-box">
               <p>Pages</p>
               <ul>
@@ -17,7 +20,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-4 col-sm-6 col-6">
+          <div className="col-md-6 col-sm-6 col-6">
             <div className="ul-box">
               <p>Education</p>
               <ul>
@@ -27,17 +30,15 @@ const Footer = () => {
                 <li> <a href="">Robotics</a> </li>
               </ul>
             </div>
-          </div>
-          <div className="col-md-4">
+          </div> */}
+          {/* <div className="col-md-4">
             <div className="ul-box">
-              <p>address</p>
               <ul>
-                <li>Baku Yasamal r.</li>
-                <li>A. M. Sharifzade str. 237 A</li>
-                <li>contact@enteskedu.com</li>
+                <li>all right reserved</li>
+                
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
