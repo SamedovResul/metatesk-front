@@ -28,8 +28,8 @@ const Addsection3 = ({setboolean}) => {
                     <p> Get a FREE demo class for your child </p>
                   </div>
                     <input type="text" required placeholder='Name and Surname'  />
-                    {/* <Select options={options}  /> */}
-                    <input type="text" required placeholder='Country' />
+                    <Select options={options}  />
+                    {/* <input type="text" required placeholder='Country' /> */}
                     <input type="email" required  placeholder='E-mail adress' />
                     <button>join</button>
                 </form>
