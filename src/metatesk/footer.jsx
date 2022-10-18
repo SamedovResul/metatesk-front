@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container-fluid" >
         <div className="row">
           <div className="col-md-12">
-            <p>© {year} Entesk All Rights Reserved</p>
+            <p>© {year} Metatesk.  All Rights Reserved</p>
             <img src={metatesk} alt="" />
           </div>
         </div>

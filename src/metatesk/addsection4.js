@@ -6,18 +6,6 @@ import poster from './metaImg/poster.png'
 
 const Addsection4 = () => {
   const [number, setNumber] = useState(false)
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setNumber(true)
-      
-  //   }, 2000);
-  //   console.log(VideoPlayer)
-  // }, [number])
-  // const play = (e) =>{
-  //   console.log(e)
-    
-  // }
   
 
   const src = "https://res.cloudinary.com/dbgyytugh/video/upload/v1665658464/recipes/MetateskTrailer_14.49.50_hmrro3.mp4"

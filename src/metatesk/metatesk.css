@@ -1153,7 +1153,7 @@ p:nth-of-type(2) {
 .footer-section
 .col-md-12{
   display: flex;
-  flex-direction: column;
+  flex-direction:column-reverse;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1184,8 +1184,8 @@ p:nth-of-type(2) {
 .col-md-12 p{
   color: white;
   font-weight: bold;
-  font-size: 22px;
-  font-family: "Nunito";
+  font-size: 20px;
+  font-family: "Calibri light";
 }
 
 .ul-box p{
@@ -1380,7 +1380,8 @@ form {
   align-items: center;
 }
 
-.metattesk-contact form div{
+.metattesk-contact form  
+.title-div  {
   border: 3px solid #482AFF;
   display: flex;
   justify-content: center;
@@ -1388,6 +1389,8 @@ form {
   margin: 20px;
   border-radius: 30px;
 }
+
+
 
 .metattesk-contact form div p{
   margin-block-start: 0em;
@@ -1418,6 +1421,23 @@ form {
   width: 70%;
   margin: 10px auto;
 }
+
+
+.metattesk-contact
+.css-b62m3t-container{
+  padding: 5px;
+  border-radius: 40px;
+  border: 2px solid #482AFF;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.metattesk-contact
+.css-1s2u09g-control{
+  border: none ;
+  border-radius: 100px;
+}
+
 
 .metattesk-contact form button{
   background-color: #482AFF;
