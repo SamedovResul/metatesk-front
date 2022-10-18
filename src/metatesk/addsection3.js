@@ -4,16 +4,58 @@ import {Element} from 'react-scroll'
 import ScrollTriger from 'react-scroll-trigger'
 import Select from 'react-select'
 import countryList from 'react-select-country-list'
-
+import axios from 'axios'
+import Swal from 'sweetalert2'
+import { validate } from 'react-email-validator';
 
 const Addsection3 = ({setboolean}) => {
   const [data, setData] = useState({
-    nameSUrname:'',
+    nameSurname:'',
     Country:'',
     email:''
   })
-  const options = useMemo(() => countryList().getData(), [])
 
+  const submit = (e) =>{
+    e.preventDefault()
+
+    if(data.Country && data.email && data.nameSurname ){
+      if(validate(data.email) ){
+        axios.post('https://metatesk.herokuapp.com/post', data)
+        .then(function (response) {
+          Swal.fire({
+            color:"green",
+            text: "Success",
+          })
+          setData({
+            nameSurname:'',
+            Country:'',
+            email:''
+          })
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      }else{
+        Swal.fire({
+          color:"red",
+          text: "please insert valid email",
+        })
+      }
+    }else{
+      Swal.fire({
+        color:"red",
+        text: "please complete form",
+      })
+    }
+
+    
+  }
+
+ 
+
+  const options = useMemo(() => countryList().getData(), [])
+  console.log(data)
   return (
     <Element name="join" >
       <ScrollTriger onEnter={()=>  setboolean(false)}  >
@@ -27,11 +69,21 @@ const Addsection3 = ({setboolean}) => {
                   <div className='title-div'>
                     <p> Get a FREE demo class for your child </p>
                   </div>
-                    <input type="text" required placeholder='Name and Surname'  />
-                    <Select options={options}  />
+                    <input type="text" value={data.nameSurname} required placeholder='Name and Surname'
+                      onChange={(e) => setData({
+                        ...data, nameSurname: e.target.value
+                      })}
+                    />
+                    <Select options={options}  placeholder="Country"  onChange={(e) => setData({
+                      ...data, Country: e.label
+                    })} />
                     {/* <input type="text" required placeholder='Country' /> */}
-                    <input type="email" required  placeholder='E-mail adress' />
-                    <button>join</button>
+                    <input type="email" required value={data.email}  placeholder='E-mail adress'
+                      onChange={(e) => setData({
+                        ...data, email: e.target.value
+                      })}
+                    />
+                    <button onClick={(e) => submit(e)} >join</button>
                 </form>
               </div>
               <div className="col-md-6 ">

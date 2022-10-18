@@ -1177,6 +1177,7 @@ p:nth-of-type(2) {
   .footer-section
   .col-md-12 img{
     width: 55%;
+    margin: 20px auto 60px auto;
   }
 }
 
@@ -1441,6 +1442,8 @@ form {
 .metattesk-contact
 .css-1pahdxg-control{
   border: none;
+  border-radius: 100px;
+  box-shadow: none;
 }
 
 
