@@ -963,41 +963,6 @@ p:nth-of-type(2) {
 /* section four */
 
 
-.section-Four{
-  background-color: #482AFF;
-  margin: 30px auto;
-}
-
-
-.section-Five,
-.section-Four .text-container h4{
-  margin: 20px;
-  color: white;
-}
-
-
-.section-Four .text-container p{
-  margin: 20px auto;
-  width: 60%;
-  color: white;
-}
-
-.section-Four .icon-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-Four .icon-box img {
-  width: 30%;
-  height: auto;
-  margin: 20px;
-}
-
-.section-Four .icon-box p {
-  color: white;
-}
 
 
 /* form section  */

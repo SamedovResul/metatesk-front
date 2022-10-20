@@ -7,7 +7,7 @@ import Addsection3 from './addsection3';
 import Addsection4 from './addsection4';
 import Addsection5 from './addsection5';
 import SrcollNumber from './scrollNumber';
-// import SectionFour from './sectionFour';
+import SectionFour from './sectionFour';
 import metateskimg from './metaImg/metatesk-logo.png';
 import SectionTwo from './sectionTwo';
 import SectionThree from './sectionThree';
@@ -49,7 +49,7 @@ const Metatesk = ({Boolean}) => {
       <SectionThree />
       <Addsection5 />
       <Addsection3 setboolean={setboolean} />
-      {/* <SectionFour  myref={myref}/> */}
+      <SectionFour  />
       
       {/* <Animation /> */}
       {/* <FooterSection data={Course} scrollTop={scrollTop} /> */}
