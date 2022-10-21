@@ -963,6 +963,17 @@ p:nth-of-type(2) {
 /* section four */
 
 
+.section-four 
+.text-box {
+  text-align: center;
+}
+
+.section-four 
+.box{
+  text-align: center;
+  padding: 100px;
+  border: 1px solid;
+}
 
 
 /* form section  */

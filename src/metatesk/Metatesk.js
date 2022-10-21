@@ -47,10 +47,10 @@ const Metatesk = ({Boolean}) => {
       <Addsection1 />
       <Addsection2 />
       <SectionThree />
-      <Addsection5 />
-      <Addsection3 setboolean={setboolean} />
       <SectionFour  />
+      <Addsection5 />
       
+      <Addsection3 setboolean={setboolean} />
       {/* <Animation /> */}
       {/* <FooterSection data={Course} scrollTop={scrollTop} /> */}
       
