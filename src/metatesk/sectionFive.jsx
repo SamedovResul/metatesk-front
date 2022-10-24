@@ -1,10 +1,22 @@
 import React from 'react'
-// import img1 from './metaImg/Img1.png';
-import img1 from './metaImg/Img1.png';
-import img2 from './metaImg/Img2.png';
-import img3 from './metaImg/Img3.png';
-
 const SectionFive = () => {
+
+
+
+  const imgs = [
+    {
+      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609842/Img3_gs0vzw.png',
+      text:'PC'
+    },
+    {
+      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666614856/Img2_gete2g.png',
+      text:'VR'
+    },
+    {
+      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609852/Img1_yuxlde.png',
+      text:'MOBILE'
+    },
+  ]
   return (
     <article className='section-five'>
       <div  className="container">
@@ -16,24 +28,19 @@ const SectionFive = () => {
                <h3> for your convenience </h3>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="img-box">
-                <img src={img3} alt="metatesk" />
-                <p>PC</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="img-box">
-                <img src={img2} alt="metatesk" />
-                <p>VR</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="img-box">
-                <img src={img1} alt="metatesk" />
-                <p>MOBILE</p>
-              </div>
-            </div>
+            {
+                  imgs.map((data, i) =>{
+                    const {img,text} = data
+                    return(
+                      <div className="col-md-4">
+                        <div className="img-box">
+                          <img src={img} alt="metatesk" />
+                          <p>{text}</p>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
           </div>
         </div>
       </div>

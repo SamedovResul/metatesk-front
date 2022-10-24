@@ -23,7 +23,7 @@ const Addsection4 = () => {
               </div>
               <div className="col-md-6">
                 <div className="img-box">
-                  <img src={img1} alt="metatesk" />
+                  <img src="https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/book_jkiwjk.png" alt="metatesk" />
                   <p>traditional learning</p>
                 </div>
               </div>

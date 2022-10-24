@@ -20,13 +20,13 @@ const Addsection1 = () => {
             <div className="col-md-6">
               <div className="img-box">
                 <p> before </p>
-                <img src={img1} alt="metatesk" />
+                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/beforeRaul_p2vuvj.png' alt="metatesk" />
               </div>
             </div>
             <div className="col-md-6">
               <div className="img-box">
               <p> now </p>
-                <img src={img2} alt="metatesk" />
+                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609844/chinaGirl_o5u0kd.png' alt="metatesk" />
               </div>
             </div>
           </div>

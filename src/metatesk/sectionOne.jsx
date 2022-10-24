@@ -8,7 +8,17 @@ import ScrollTriger from 'react-scroll-trigger';
 
 const SectionOne = ({setboolean}) => {
   
-
+const imgs = [
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609831/banner_jwv0es.png'
+  },
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/banner2_nvnsnl.png'
+  },
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609834/banner3_wg1k1o.png'
+  },
+]
 // use spring 
 const settings = {
   dots: true,
@@ -43,15 +53,16 @@ const settings = {
               
               <div className="col-md-12">
               <Slider {...settings}>
-                <div  className='slide' >
-                  <img src={img1} alt="" />
-                </div>
-                <div className='slide' >
-                  <img src={img2} alt="" />
-                </div>
-                <div className='slide' >
-                  <img src={img3} alt="" />
-                </div>
+                {
+                  imgs.map((data, i) =>{
+                    const {img} = data
+                    return(
+                      <div key={i} className='slide' >
+                        <img src={img} alt="metatesk" />
+                      </div>
+                    )
+                  })
+                }
               </Slider>
               </div>
             
