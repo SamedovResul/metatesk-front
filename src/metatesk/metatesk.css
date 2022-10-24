@@ -1934,12 +1934,12 @@ p:nth-of-type(4)  {
 /* section seven */
 
 .section-seven  {
-  margin: 100px auto;
+  margin: 50px auto auto auto;
 }
 
 .section-seven .text-box{
   text-align: center;
-  margin: 20px auto 80px auto;
+  margin: 20px auto 50px auto;
 }
 
 .section-seven .box{
@@ -1954,9 +1954,21 @@ p:nth-of-type(4)  {
   width: 50%;
 }
 
+@media(max-width:768px){
+  .section-seven .box img{
+    width: 80%;
+  }
+}
+
 .section-seven .text-box h3{
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 800;
   font-family: "Nunito";
   color: #482AFF;
+}
+
+@media(max-width:768px){
+  .section-seven .text-box h3{
+    font-size: 35px;
+  }
 }

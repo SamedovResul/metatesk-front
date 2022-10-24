@@ -41,7 +41,7 @@ const Metatesk = ({Boolean}) => {
   return (
     <article className='metatesk-section' >
       
-      <SectionOne />
+      <SectionOne setboolean={setboolean} />
       <SectionTwo />
       <SectionThree  />
       <SectionFour />

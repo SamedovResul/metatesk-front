@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import img1 from './metaImg/banner.png';
 import img2 from './metaImg/banner2.png';
 import img3 from './metaImg/banner3.png';
-import {Element} from 'react-scroll'
+import {Element} from 'react-scroll';
+import ScrollTriger from 'react-scroll-trigger';
 
-const SectionOne = () => {
+const SectionOne = ({setboolean}) => {
   
 
 // use spring 
@@ -28,6 +29,7 @@ const settings = {
 
   return (
     <Element name="home" >
+      <ScrollTriger onEnter={()=>  setboolean(false)}>
       <article className='metatesk-info section-one'>
         <p> EDUCATION in METAVERSE </p>
         <div className="text-container">
@@ -58,6 +60,7 @@ const settings = {
 
 
       </article>
+      </ScrollTriger>
     </Element>
   )
 }

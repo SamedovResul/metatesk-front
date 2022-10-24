@@ -11,20 +11,20 @@ const SectionFour = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="text-box">
-                <h3>avaliable on</h3>
+                <h3>Avaliable on</h3>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-4 col-4">
               <div className="box">
                 <img src={img2} alt="metatesk" />
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-4 col-4">
               <div className="box">
                 <img src={img1} alt="metatesk" />
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-4 col-4">
               <div className="box">
                 <img src={img3} alt="metatesk" />
               </div>
