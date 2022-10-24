@@ -1795,7 +1795,7 @@ p:nth-of-type(4)  {
 /* add-section-five */
 
 .add-section-five{
-  margin: 70px auto 100px auto;
+  margin: 30px auto 100px auto;
   padding: 50px 0px ;
   border-bottom: 5px solid #482AFF;
   border-top: 5px solid #482AFF;
@@ -1937,9 +1937,45 @@ p:nth-of-type(4)  {
   margin: 50px auto auto auto;
 }
 
+@media(max-width:1200px){
+  .section-seven  {
+    margin: 20px auto auto auto;
+  }
+}
+
+
+@media(max-width:1024px){
+  .section-seven  {
+    margin: 200px auto auto auto;
+  }
+}
+
+@media(max-width:1000px){
+  .section-seven  {
+    margin: 300px auto auto auto;
+  }
+}
+
+
+@media(max-width:991px){
+  .section-seven  {
+    margin: 20px auto auto auto;
+  }
+}
+
+@media(max-width:675px){
+  .section-seven  {
+    margin: 50px auto auto auto;
+  }
+}
+
+
+
+
+
 .section-seven .text-box{
   text-align: center;
-  margin: 20px auto 50px auto;
+  margin: 0px auto 20px auto;
 }
 
 .section-seven .box{
@@ -1961,7 +1997,7 @@ p:nth-of-type(4)  {
 }
 
 .section-seven .text-box h3{
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 800;
   font-family: "Nunito";
   color: #482AFF;

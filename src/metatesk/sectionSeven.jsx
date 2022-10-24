@@ -21,12 +21,12 @@ const SectionFour = () => {
             </div>
             <div className="col-md-4 col-sm-4 col-4">
               <div className="box">
-                <img src={img1} alt="metatesk" />
+                <img src={img3} alt="metatesk" />
               </div>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
               <div className="box">
-                <img src={img3} alt="metatesk" />
+                <img src={img1} alt="metatesk" />
               </div>
             </div>
           </div>
