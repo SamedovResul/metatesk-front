@@ -1,7 +1,7 @@
 import React ,{useEffect,useState,useMemo} from 'react'
 import sectionImg from './metaImg/sectionOnebg.jpeg'
 import {Element} from 'react-scroll'
-import ScrollTriger from 'react-scroll-trigger'
+import ScrollTriger from 'react-scroll-trigger';
 import Select from 'react-select'
 import countryList from 'react-select-country-list'
 import axios from 'axios'
@@ -14,7 +14,7 @@ const Addsection3 = ({setboolean}) => {
     Country:'',
     email:''
   })
-
+  console.log(window.innerWidth)
   const submit = (e) =>{
     e.preventDefault()
 
@@ -31,7 +31,6 @@ const Addsection3 = ({setboolean}) => {
             Country:'',
             email:''
           })
-          console.log(response.data);
         })
         .catch(function (error) {
           console.log(error);
@@ -55,7 +54,6 @@ const Addsection3 = ({setboolean}) => {
  
 
   const options = useMemo(() => countryList().getData(), [])
-  console.log(data)
   return (
     <Element name="join" >
       <ScrollTriger onEnter={()=>  setboolean(false)}  >
@@ -89,7 +87,7 @@ const Addsection3 = ({setboolean}) => {
               <div className="col-md-6 ">
                 <div  className='metatesk-img' >
                   <img 
-                  src={sectionImg} alt="metatesk"
+                  src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/sectionOnebg_oknnje.jpg' alt="metatesk"
                   />
                 </div>
               </div>

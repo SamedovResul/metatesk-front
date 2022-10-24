@@ -4,9 +4,9 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Metatesk from './metatesk/Metatesk'
-import Navbar from "./metatesk/navbar";
-import Footer from "./metatesk/footer";
+import Metatesk from './component/Metatesk'
+import Navbar from "./component/navbar";
+import Footer from "./component/footer";
 
 function App() {
   const [boolean, setboolean] = useState(false)

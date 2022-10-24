@@ -3,11 +3,22 @@ import Slider from "react-slick";
 import img1 from './metaImg/banner.png';
 import img2 from './metaImg/banner2.png';
 import img3 from './metaImg/banner3.png';
-import {Element} from 'react-scroll'
+import {Element} from 'react-scroll';
+import ScrollTriger from 'react-scroll-trigger';
 
-const SectionOne = () => {
+const SectionOne = ({setboolean}) => {
   
-
+const imgs = [
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609831/banner_jwv0es.png'
+  },
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/banner2_nvnsnl.png'
+  },
+  {
+    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609834/banner3_wg1k1o.png'
+  },
+]
 // use spring 
 const settings = {
   dots: true,
@@ -28,6 +39,7 @@ const settings = {
 
   return (
     <Element name="home" >
+      <ScrollTriger onEnter={()=>  setboolean(false)}>
       <article className='metatesk-info section-one'>
         <p> EDUCATION in METAVERSE </p>
         <div className="text-container">
@@ -41,15 +53,16 @@ const settings = {
               
               <div className="col-md-12">
               <Slider {...settings}>
-                <div  className='slide' >
-                  <img src={img1} alt="" />
-                </div>
-                <div className='slide' >
-                  <img src={img2} alt="" />
-                </div>
-                <div className='slide' >
-                  <img src={img3} alt="" />
-                </div>
+                {
+                  imgs.map((data, i) =>{
+                    const {img} = data
+                    return(
+                      <div key={i} className='slide' >
+                        <img src={img} alt="metatesk" />
+                      </div>
+                    )
+                  })
+                }
               </Slider>
               </div>
             
@@ -58,6 +71,7 @@ const settings = {
 
 
       </article>
+      </ScrollTriger>
     </Element>
   )
 }

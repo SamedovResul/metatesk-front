@@ -11,7 +11,7 @@ const Addsection4 = () => {
   const src = "https://res.cloudinary.com/dbgyytugh/video/upload/v1665658464/recipes/MetateskTrailer_14.49.50_hmrro3.mp4"
   return (
     <ScrollTriger onEnter={()=>  setNumber(true)} onExit={() => setNumber(false)} >
-      <article className='add-section-four'>
+      <article className='section-two'>
         <div  className="container">
           <div className="container-fluid">
             <div className="row">
@@ -23,7 +23,7 @@ const Addsection4 = () => {
               </div>
               <div className="col-md-6">
                 <div className="img-box">
-                  <img src={img1} alt="metatesk" />
+                  <img src="https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/book_jkiwjk.png" alt="metatesk" />
                   <p>traditional learning</p>
                 </div>
               </div>
