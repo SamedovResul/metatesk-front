@@ -1,16 +1,16 @@
 import React,{useEffect,useRef} from 'react';
 import './metatesk.css'
 import SectionOne from './sectionOne';
-import Addsection1 from './addsection1';
-import Addsection2 from './addsection2';
-import Addsection3 from './addsection3';
-import Addsection4 from './addsection4';
-import Addsection5 from './addsection5';
-import SrcollNumber from './scrollNumber';
-import SectionFour from './sectionFour';
-import metateskimg from './metaImg/metatesk-logo.png';
 import SectionTwo from './sectionTwo';
 import SectionThree from './sectionThree';
+import SectionFour from './sectionFour';
+import SectionFive from './sectionFive';
+import SectionSix from './sectionSix';
+import SrcollNumber from './scrollNumber';
+import SectionSeven from './sectionSeven';
+import metateskimg from './metaImg/metatesk-logo.png';
+import SectionEight from './sectionEight';
+import SectionNine from './sectionNine';
 import {useSpring,animated} from 'react-spring';
 // import FooterSection from '../homeFolder/footerSection';
 
@@ -42,17 +42,14 @@ const Metatesk = ({Boolean}) => {
     <article className='metatesk-section' >
       
       <SectionOne />
-      <Addsection4 />
-      <SectionTwo  />
-      <Addsection1 />
-      <Addsection2 />
-      <SectionThree />
-      <SectionFour  />
-      <Addsection5 />
-      
-      <Addsection3 setboolean={setboolean} />
-      {/* <Animation /> */}
-      {/* <FooterSection data={Course} scrollTop={scrollTop} /> */}
+      <SectionTwo />
+      <SectionThree  />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven  />
+      <SectionEight />
+      <SectionNine setboolean={setboolean} />
       
     </article>
   )

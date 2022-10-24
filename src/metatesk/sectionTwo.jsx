@@ -11,7 +11,7 @@ const Addsection4 = () => {
   const src = "https://res.cloudinary.com/dbgyytugh/video/upload/v1665658464/recipes/MetateskTrailer_14.49.50_hmrro3.mp4"
   return (
     <ScrollTriger onEnter={()=>  setNumber(true)} onExit={() => setNumber(false)} >
-      <article className='add-section-four'>
+      <article className='section-two'>
         <div  className="container">
           <div className="container-fluid">
             <div className="row">

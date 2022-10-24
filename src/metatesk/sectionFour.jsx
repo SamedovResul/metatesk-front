@@ -6,7 +6,7 @@ import img2 from './metaImg/chinaGirl.png'
 
 const Addsection1 = () => {
   return (
-    <article className='add-section-one'>
+    <article className='section-four'>
       <div  className="container">
         <div className="container-fluid">
           <div className="row">
@@ -19,7 +19,7 @@ const Addsection1 = () => {
             </div>
             <div className="col-md-6">
               <div className="img-box">
-              <p> before </p>
+                <p> before </p>
                 <img src={img1} alt="metatesk" />
               </div>
             </div>

@@ -4,9 +4,9 @@ import img1 from './metaImg/Img1.png';
 import img2 from './metaImg/Img2.png';
 import img3 from './metaImg/Img3.png';
 
-const Addsection2 = () => {
+const SectionFive = () => {
   return (
-    <article className='add-section-Two'>
+    <article className='section-five'>
       <div  className="container">
         <div className="container-fluid">
           <div className="row">
@@ -41,4 +41,4 @@ const Addsection2 = () => {
   )
 }
 
-export default Addsection2
+export default SectionFive

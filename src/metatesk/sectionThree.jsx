@@ -49,7 +49,7 @@ const SectionTwo = () => {
   
 
   return (
-    <article className='section-Two' ref={myref}> 
+    <article className='section-three' ref={myref}> 
       <div className="container">
         <div className="container-fluid">
           <div className="row">

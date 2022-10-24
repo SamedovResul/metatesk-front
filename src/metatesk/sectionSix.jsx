@@ -42,7 +42,7 @@ import imgData from './imgData'
     })
     // Render the grid
     return (
-      <section className='section-Three'>
+      <section className='section-six'>
         <div className="container-fluid">
           <div className="container">
             <div className="row">
