@@ -20,7 +20,7 @@ const Addsection3 = ({setboolean}) => {
   const submit = (e) =>{
     e.preventDefault()
 
-    if(data.Country && data.email && data.nameSurname ){
+    if(data.Country && data.email && data.nameSurname && data.date ){
       if(validate(data.email) ){
         setDisabled(true)
         axios.post('https://metatesk.herokuapp.com/post', data)
