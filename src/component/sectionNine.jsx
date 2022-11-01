@@ -16,6 +16,7 @@ const Addsection3 = ({setboolean}) => {
     date:''
   })
   const [Disabled, setDisabled] = useState(false)
+  const [Date, setDate] = useState(false)
   const submit = (e) =>{
     e.preventDefault()
 
@@ -82,10 +83,15 @@ const Addsection3 = ({setboolean}) => {
                         ...data, email: e.target.value
                       })}
                     />
-                    <input type="datetime-local" onChange={(e) => setData({
+                    {/* <input type="datetime-local" value="dds" onChange={(e) => setData({
                         ...data, date: e.target.value
-                      })}  />
-
+                      })}  /> */}
+                        <input placeholder="Select date" 
+                        type={Date ? "datetime-local" : "text"} 
+                        onFocus={() => setDate(true)} 
+                        onChange={(e) => setData({
+                          ...data, date: e.target.value
+                        })} ></input>
                       {
                         Disabled ? (
                           <button
