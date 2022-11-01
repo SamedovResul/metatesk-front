@@ -32,7 +32,7 @@ const SectionFive = () => {
                   imgs.map((data, i) =>{
                     const {img,text} = data
                     return(
-                      <div className="col-md-4">
+                      <div key={i} className="col-md-4">
                         <div className="img-box">
                           <img src={img} alt="metatesk" />
                           <p>{text}</p>

@@ -3,7 +3,7 @@ import img1 from './metaImg/core.png'
 import img2 from './metaImg/MetaQuest.png'
 import img3 from './metaImg/Roblox.png'
 
-const SectionFour = () => {
+const SectionSeven = () => {
 
 
   const imgs = [
@@ -31,7 +31,7 @@ const SectionFour = () => {
                 imgs.map((data, i) =>{
                   const {img} = data
                   return(
-                    <div className="col-md-4 col-sm-4 col-4">
+                    <div key={i} className="col-md-4 col-sm-4 col-4">
                       <div className="box">
                         <img src={img} alt="metatesk" />
                       </div>
@@ -46,4 +46,4 @@ const SectionFour = () => {
   );
 };
 
-export default SectionFour;
+export default SectionSeven;

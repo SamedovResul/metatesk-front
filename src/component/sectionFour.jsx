@@ -1,10 +1,7 @@
 import React from 'react'
-import img1 from './metaImg/beforeRaul.png';
-import img2 from './metaImg/chinaGirl.png'
-// import entesk from '../../../public/images'
 
 
-const Addsection1 = () => {
+const sectionFour = () => {
   return (
     <article className='section-four'>
       <div  className="container">
@@ -36,4 +33,4 @@ const Addsection1 = () => {
   )
 }
 
-export default Addsection1
+export default sectionFour

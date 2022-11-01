@@ -12,20 +12,23 @@ const Addsection3 = ({setboolean}) => {
   const [data, setData] = useState({
     nameSurname:'',
     Country:'',
-    email:''
+    email:'',
+    date:''
   })
-  console.log(window.innerWidth)
+  const [Disabled, setDisabled] = useState(false)
   const submit = (e) =>{
     e.preventDefault()
 
     if(data.Country && data.email && data.nameSurname ){
       if(validate(data.email) ){
+        setDisabled(true)
         axios.post('https://metatesk.herokuapp.com/post', data)
         .then(function (response) {
           Swal.fire({
             color:"green",
             text: "Success",
           })
+          setDisabled(false)
           setData({
             nameSurname:'',
             Country:'',
@@ -47,10 +50,8 @@ const Addsection3 = ({setboolean}) => {
         text: "please complete form",
       })
     }
-
-    
   }
-
+  console.log(data)
  
 
   const options = useMemo(() => countryList().getData(), [])
@@ -81,7 +82,19 @@ const Addsection3 = ({setboolean}) => {
                         ...data, email: e.target.value
                       })}
                     />
-                    <button onClick={(e) => submit(e)} >join</button>
+                    <input type="datetime-local" onChange={(e) => setData({
+                        ...data, date: e.target.value
+                      })}  />
+
+                      {
+                        Disabled ? (
+                          <button
+                          style={{backgroundColor:"gray"}}
+                            disabled >join</button>
+                        ):(
+                          <button onClick={(e) => submit(e)}   >join</button>
+                        )
+                      }
                 </form>
               </div>
               <div className="col-md-6 ">
