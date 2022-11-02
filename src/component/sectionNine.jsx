@@ -23,7 +23,8 @@ const Addsection3 = ({setboolean}) => {
     if(data.Country && data.email && data.nameSurname && data.date ){
       if(validate(data.email) ){
         setDisabled(true)
-        axios.post('https://metatesk.herokuapp.com/post', data)
+        // https://metatesk.herokuapp.com/post
+        axios.post('http://localhost:5000/email/post', data)
         .then(function (response) {
           Swal.fire({
             color:"green",
