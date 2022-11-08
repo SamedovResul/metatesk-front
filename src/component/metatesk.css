@@ -1057,10 +1057,10 @@ p:nth-of-type(2) {
   font-family: 'Roboto',sans-serif;
   font-size: 15px;
   position: relative;
-  margin: 10px auto 10px auto;
+  margin: 0px auto 0px auto;
   border: 2px solid #482AFF;
   border-radius: 20px;
-  width: 70% !important;
+  width: 90% !important;
 }
 
 .react-tel-input .form-control {
@@ -1346,7 +1346,43 @@ form {
   border-radius: 30px;
 }
 
+.metattesk-contact 
+form 
+.WhatsApp-div{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 10px auto;
+}
 
+.metattesk-contact 
+form 
+.WhatsApp-div 
+.WhatsApp {
+  width: 25px;
+  height: 25px;
+  margin: 5px 10px 10px;
+}
+
+.metattesk-contact 
+form 
+.date-div{
+  width: 70%;
+  display: flex;
+}
+
+.metattesk-contact 
+form 
+.date-div
+input{
+  width: 48%;
+}
+
+
+.metattesk-contact 
+.WhatsApp svg {
+  fill: #482AFF;
+}
 
 .metattesk-contact form div p{
   margin-block-start: 0em;
