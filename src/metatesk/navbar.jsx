@@ -118,11 +118,19 @@ const Navbar = ({ Boolean }) => {
                 Join
               </button>
               <div className="icon" >
-                <Link to="join" smooth={true} duration={500} offset={-150}>
+                {/* <Link to="join" smooth={true} duration={500} offset={-150}>
                   Login
-                </Link>
+                </Link> */}
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 96h64c17.7 0 32 14.3 32 32V384c0 17.7-14.3 32-32 32H352c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c53 0 96-43 96-96V128c0-53-43-96-96-96H352c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-7.5 177.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H160v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z"/></svg>
+                </span>
+              </div>
+              <div className="icon" >
+                {/* <Link to="home" smooth={true} duration={500} offset={-150}>
+                  Find Class
+                </Link> */}
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
                 </span>
               </div>
               <button
@@ -136,12 +144,12 @@ const Navbar = ({ Boolean }) => {
 
 
             <animated.div style={burger} className="responsive-navigation">
-              <button
+              {/* <button
                 className="open-burger"
                 onClick={() => (boolean ? setboolean(false) : setboolean(true))}
               >
                 &#9776;
-              </button>
+              </button> */}
               <ul>
                 <li>
                   <Link to="home" smooth={true} duration={500} offset={-150}>
