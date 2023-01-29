@@ -43,11 +43,17 @@ const settings = {
       <article className='metatesk-info section-one'>
         <p> EDUCATION in METAVERSE </p>
         <div className="text-container">
-          <p> classes for </p>
-          <p> 6-14 years old </p>
-          <p> for </p>
-          <p> any point of the world </p>
+          <p> education in metewarsre </p>
+          <div className="img-container">
+            <img src="https://www.enteskedu.com/static/media/leaf.712bf782.png" alt="metatesk" />
+            <img src="https://www.enteskedu.com/static/media/circle.14705bd1.png" alt="metatesk" />
+            <img src="https://www.enteskedu.com/static/media/brush.3fc0463e.png" alt="metatesk" />
+          </div>
+          <p>
+          Take learning to the next level with exciting, entertaining, engaging classes
+          </p>
         </div>
+        <p>EDUCATION in METAVERSE</p>
           <div className="container-fluid">
             <div className="row">
               
