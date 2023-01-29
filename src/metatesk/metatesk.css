@@ -182,7 +182,7 @@
     padding: 6px 10px;
     background-color: unset;
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     border: unset;
   }
   
@@ -234,7 +234,7 @@
   .menu-div{
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     padding: 0px 10px;
