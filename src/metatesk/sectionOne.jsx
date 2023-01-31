@@ -41,17 +41,21 @@ const settings = {
     <Element name="home" >
       <ScrollTriger onEnter={()=>  setboolean(false)}>
       <article className='metatesk-info section-one'>
-        <p> EDUCATION in METAVERSE </p>
         <div className="text-container">
-          <p> education in metewarsre </p>
-          <div className="img-container">
-            <img src="https://www.enteskedu.com/static/media/leaf.712bf782.png" alt="metatesk" />
-            <img src="https://www.enteskedu.com/static/media/circle.14705bd1.png" alt="metatesk" />
-            <img src="https://www.enteskedu.com/static/media/brush.3fc0463e.png" alt="metatesk" />
+          <div>
+            <p> education in metaverse </p>
+            <div className="img-container">
+              <img src="https://www.enteskedu.com/static/media/leaf.712bf782.png" alt="metatesk" />
+              <img src="https://www.enteskedu.com/static/media/circle.14705bd1.png" alt="metatesk" />
+              <img src="https://www.enteskedu.com/static/media/brush.3fc0463e.png" alt="metatesk" />
+            </div>
+            <p>
+            Take learning to the next level with exciting, entertaining, engaging classes
+            </p>
+            <button> 
+              Browse Classes
+            </button>
           </div>
-          <p>
-          Take learning to the next level with exciting, entertaining, engaging classes
-          </p>
         </div>
         <p>EDUCATION in METAVERSE</p>
           <div className="container-fluid">
