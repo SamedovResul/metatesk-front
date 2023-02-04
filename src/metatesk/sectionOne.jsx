@@ -61,7 +61,7 @@ const settings = {
             <div className="row">
               
               <div className="col-md-12">
-              <Slider {...settings}>
+              {/* <Slider {...settings}>
                 {
                   imgs.map((data, i) =>{
                     const {img} = data
@@ -72,7 +72,7 @@ const settings = {
                     )
                   })
                 }
-              </Slider>
+              </Slider> */}
               </div>
             
             </div>
