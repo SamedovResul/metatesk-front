@@ -28,7 +28,7 @@ const SectionNine = ({setboolean}) => {
       if(validate(data.email) ){
         setDisabled(true)
         // https://metatesk.herokuapp.com/email/post  http://localhost:5000/email/post
-        axios.post('http://localhost:5000/email/post', data)
+        axios.post('https://enteskcrmserver.azurewebsites.net/post', data)
         .then(function (response) {
           Swal.fire({
             color:"green",
