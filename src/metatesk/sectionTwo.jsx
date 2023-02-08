@@ -21,7 +21,7 @@ const SectionTwo = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     initialSlide: 0,
     beforeChange: (current, next) => {
       if(next > 0 && !rightSliderClass){
@@ -51,8 +51,8 @@ const SectionTwo = () => {
         <div className="container">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-12 text-div">
-                <div className="">
+              <div className="col-md-12 ">
+                <div className="text-div">
                   <p>Discover a world of endless learning possibilities</p>
                   <p>
                     We give kids 3–18 a place to build their own curriculum of
