@@ -24,7 +24,21 @@ const SectionTwo = () => {
       <div className="container">
         <div className="container-fluid">
           <div className="row">
-            {imgs.map((data, i) => {
+            <div className="col-md-12">
+              <div className="center-container">
+                <div className="left">
+
+                </div>
+                <div className="right">
+                  <p>Frustrated by a one-size-fits-all education?</p>
+                  <p>No contracts, sales calls, or upfront payments. Vetted educators with thousands of 5-star reviews.</p>
+                  <button>
+                    Explore Tutors
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* {imgs.map((data, i) => {
               const { img } = data;
               return (
                 <div key={i} className="col-md-4 ">
@@ -37,7 +51,7 @@ const SectionTwo = () => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>
