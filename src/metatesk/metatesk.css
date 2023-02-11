@@ -507,6 +507,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
+  display: flex;
 }
 
 
@@ -597,10 +598,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0px;
   height: 600px;
-  width: 600px;
+  width: 50%;
   z-index: 10;
 }
 
@@ -611,14 +610,7 @@
 }
 
 
-.metatesk-section
-.section-one
-.text-container
-.img-container{
-  display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-}
+
 
 .metatesk-section
 .section-one
@@ -629,13 +621,6 @@
   background-color: #482AFF;
   color: #fff;
   font-family: "Nunito";
-}
-
-.metatesk-section
-.section-one
-.text-container
-.img-container img{
-  width: 20%;
 }
 
 .metatesk-section
@@ -830,6 +815,20 @@ p:nth-of-type(2) {
   background-color: #482AFF;
   border-radius: 20px;
   color: white;
+}
+
+
+.metatesk-section
+.section-one
+.img-container{
+  width: 50%;
+}
+
+.metatesk-section
+.section-one
+.img-container img{
+  width: 100%;
+  height: auto;
 }
 
 /* @media(max-width:768px){
@@ -1051,27 +1050,6 @@ p:nth-of-type(2) {
 }
 
 
-.img-container{
-  width: 100%;
-  height: auto;
-  position: relative;
-  /* background:url("./metaImg/something.png"); */
-  background-position: center;
-  background-size:cover;
-}
-
-.map{
-  height: 700px !important;
-  width: 300px;
-  border: 1px solid black;
-}
-
-
-.img-container img{
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
 /* section four */
 
 
