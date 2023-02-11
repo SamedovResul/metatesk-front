@@ -44,11 +44,6 @@ const settings = {
         <div className="text-container">
           <div>
             <p> education in  metaverse </p>
-            {/* <div className="img-container">
-              <img src="https://www.enteskedu.com/static/media/leaf.712bf782.png" alt="metatesk" />
-              <img src="https://www.enteskedu.com/static/media/circle.14705bd1.png" alt="metatesk" />
-              <img src="https://www.enteskedu.com/static/media/brush.3fc0463e.png" alt="metatesk" />
-            </div> */}
             <p>
             Take learning to the next level with exciting, entertaining and engaging classes
             </p>
@@ -57,28 +52,9 @@ const settings = {
             </button>
           </div>
         </div>
-          <div className="container-fluid">
-            <div className="row">
-              
-              <div className="col-md-12">
-              {/* <Slider {...settings}>
-                {
-                  imgs.map((data, i) =>{
-                    const {img} = data
-                    return(
-                      <div key={i} className='slide' >
-                        <img src={img} alt="metatesk" />
-                      </div>
-                    )
-                  })
-                }
-              </Slider> */}
-              </div>
-            
-            </div>
-          </div>
-
-
+        <div className="img-container">
+          <img src="https://res.cloudinary.com/djzudd6ub/image/upload/v1676110247/metatesk%20web/idris_for_metatesk_khsdkn.png" alt="" />
+        </div>
       </article>
       </ScrollTriger>
     </Element>
