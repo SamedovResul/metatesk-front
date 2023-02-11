@@ -54,6 +54,9 @@ const settings = {
         </div>
         <div className="img-container">
           <img src="https://res.cloudinary.com/djzudd6ub/image/upload/v1676112842/metatesk%20web/idris_for_metatesk_site_psd_rbaoea.png" alt="metatesk" />
+          <img src="https://www.enteskedu.com/static/media/leaf.712bf782.png" alt="" />
+          <img src="https://www.enteskedu.com/static/media/circle.14705bd1.png" alt="" />
+          <img src="https://www.enteskedu.com/static/media/brush.3fc0463e.png" alt="" />
         </div>
       </article>
       </ScrollTriger>
