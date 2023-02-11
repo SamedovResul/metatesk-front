@@ -53,7 +53,7 @@ const settings = {
           </div>
         </div>
         <div className="img-container">
-          <img src="https://res.cloudinary.com/djzudd6ub/image/upload/v1676110247/metatesk%20web/idris_for_metatesk_khsdkn.png" alt="" />
+          <img src="https://res.cloudinary.com/djzudd6ub/image/upload/v1676112842/metatesk%20web/idris_for_metatesk_site_psd_rbaoea.png" alt="metatesk" />
         </div>
       </article>
       </ScrollTriger>
