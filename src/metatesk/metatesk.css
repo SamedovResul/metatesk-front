@@ -822,12 +822,16 @@ p:nth-of-type(2) {
 .section-one
 .img-container{
   width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .metatesk-section
 .section-one
 .img-container img{
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
