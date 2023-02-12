@@ -1,34 +1,53 @@
 import React from 'react'
-import img1 from './metaImg/beforeRaul.png';
-import img2 from './metaImg/chinaGirl.png'
-// import entesk from '../../../public/images'
 
 
-const Addsection1 = () => {
+const sectionFour = () => {
+
+
+  const data = [
+    {
+      img:'https://static.outschool.com/master/main/public/images/Illustration_Swimming_200x200-Color.a877629db987419aefbf393bcc273a57.png',
+      headText:'Let them lead',
+      txt:'We empower kids and teens to take charge of their learning and explore the topics they love most.'
+    },
+    {
+      img:'https://static.outschool.com/master/main/public/images/Illustration_Swimming_200x200-Color.a877629db987419aefbf393bcc273a57.png',
+      headText:'Let them lead',
+      txt:'We empower kids and teens to take charge of their learning and explore the topics they love most.'
+    },
+    {
+      img:'https://static.outschool.com/master/main/public/images/Illustration_Swimming_200x200-Color.a877629db987419aefbf393bcc273a57.png',
+      headText:'Let them lead',
+      txt:'We empower kids and teens to take charge of their learning and explore the topics they love most.'
+    },
+  ]
+
   return (
     <article className='section-four'>
       <div  className="container">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
-              <div className="text-box">
-                <h3> <span> metatesk </span> <br />
-                    <span> is making the learning process </span> <br />
-                    <span> engaging, entertaining, exciting </span> </h3>
+              <div className="text-container">
+                <h4>Go wild with wonder</h4>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="img-box">
-                <p> before </p>
-                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/beforeRaul_p2vuvj.png' alt="metatesk" />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="img-box">
-              <p> now </p>
-                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609844/chinaGirl_o5u0kd.png' alt="metatesk" />
-              </div>
-            </div>
+            {
+                data.map((data) =>{
+                  const {img, headText,txt} = data
+
+                  return(
+                    <div className="col-md-4">
+                      <div className="box">
+                          <img src={img} alt="metatesk" />
+                          <p>{headText}</p>
+                          <p>{txt}</p>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            
           </div>
         </div>
       </div>
@@ -36,4 +55,4 @@ const Addsection1 = () => {
   )
 }
 
-export default Addsection1
+export default sectionFour
