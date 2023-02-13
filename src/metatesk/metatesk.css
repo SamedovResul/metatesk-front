@@ -1350,59 +1350,67 @@ p:nth-of-type(2) {
 
 
 
-.section-five{
-  background-color: #482AFF;
-  padding:50px 0px ;
+.section-five
+.text-box{
+  text-align: center;
+
+}
+.section-five
+.text-box h5{
+  font-size: 30px;
+  color: #482AFF;
+  font-weight: 700;
+  font-family: "Nunito";
 }
 
 
-.section-five 
-.img-box{
+.section-five
+.text-div{
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 10px;
 }
 
-.section-five 
-.img-box img{
- width: 100%;
- height: auto;
- transform: unset;
- border-radius: 10px;
+
+
+.section-five
+.text-div
+svg{
+  width: 3%;
 }
 
 .section-five
-.img-box p{
-  font-size: 25px;
-  font-family: "Nunito";
-  font-weight: 800; 
+.text-div
+p{
+  font-size: 20px;
+  font-family: 700;
+  color: black;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  font-family: "Nunito";
-  color: white;
-  margin: 20px auto;
+  padding: 5px;
 }
 
-.section-five 
-.text-box{
-  text-align: center;
+.section-five
+.link-div{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.section-five 
-.text-box h3:nth-of-type(1)  {
-  color: white;
-  font-size: 35px;
-  font-family: "Nunito";
-  font-weight: 700;
+.section-five
+.link-div
+a{
+  text-decoration: none;
+  padding: 0px 10px;
+  margin: 10px 0px;
+  border-left: 1px solid;
+  color:#482AFF;
 }
 
-.section-five 
-.text-box h3:nth-of-type(2) {
-  color: white;
-  font-size: 28px;
-  font-family: "Calibri light";
-}
+.section-five
+.link-div
+ a:first-of-type{
+  border:none;
+ }
 
 /* add section 3  */
 
