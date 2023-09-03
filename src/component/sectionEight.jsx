@@ -30,7 +30,7 @@ const Addsection5 = () => {
           <div className="col-md-4">
           <div className="text-box">
             <p>under   </p>
-            <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609840/google_f3kgkz.png' alt="" />
+            <img src={google} alt="" />
             <p>program</p>
           </div>
           </div>
