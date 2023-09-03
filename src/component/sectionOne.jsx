@@ -10,13 +10,13 @@ const SectionOne = ({setboolean}) => {
   
 const imgs = [
   {
-    img1
+    img:img1
   },
   {
-    img2
+    img:img2
   },
   {
-    img3
+    img:img3
   },
 ]
 // use spring 
