@@ -1,6 +1,6 @@
 import React from 'react'
 import before from './metaImg/beforeRaul.png'
-import girl from './metaImg/chineGirl.png'
+import girl from './metaImg/chinaGirl.png'
 
 const sectionFour = () => {
   return (
