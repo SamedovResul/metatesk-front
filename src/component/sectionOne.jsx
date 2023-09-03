@@ -10,13 +10,13 @@ const SectionOne = ({setboolean}) => {
   
 const imgs = [
   {
-    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609831/banner_jwv0es.png'
+    img1
   },
   {
-    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/banner2_nvnsnl.png'
+    img2
   },
   {
-    img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609834/banner3_wg1k1o.png'
+    img3
   },
 ]
 // use spring 
