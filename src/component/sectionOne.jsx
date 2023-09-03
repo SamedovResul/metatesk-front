@@ -1,8 +1,8 @@
 import React,{useState,useRef} from 'react'
 import Slider from "react-slick";
-import img1 from './metaImg/Img1.png';
-import img2 from './metaImg/Img2.png';
-import img3 from './metaImg/Img3.png';
+import img1 from './metaImg/banner.png';
+import img2 from './metaImg/banner2.png';
+import img3 from './metaImg/banner3.png';
 import {Element} from 'react-scroll';
 import ScrollTriger from 'react-scroll-trigger';
 
