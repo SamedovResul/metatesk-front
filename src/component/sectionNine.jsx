@@ -141,7 +141,7 @@ const SectionNine = ({setboolean}) => {
               <div className="col-md-6 ">
                 <div  className='metatesk-img' >
                   <img 
-                  src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/sectionOnebg_oknnje.jpg' alt="metatesk"
+                  src={sectionImg} alt="metatesk"
                   />
                 </div>
               </div>

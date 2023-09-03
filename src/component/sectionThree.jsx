@@ -9,13 +9,13 @@ const SectionTwo = () => {
 
   const imgs = [
     {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/image2_yubhzi.png",
+      img:img1,
     },
     {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/image1_fg49bt.png",
+      img:img2,
     },
     {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/image3_eutmiq.png",
+      img:img3,
     },
   ];
 

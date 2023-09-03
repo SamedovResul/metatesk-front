@@ -8,13 +8,13 @@ const SectionSeven = () => {
 
   const imgs = [
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/MetaQuest_roplyk.png'
+      img:img3
     },
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609839/Roblox_swh04f.png'
+      img:img2
     },
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/core_fgxgep.png'
+      img:img1
     },
   ]
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import before from './metaImg/beforeRaul.png'
+import girl from './metaImg/chineGirl.png'
 
 const sectionFour = () => {
   return (
@@ -17,13 +18,13 @@ const sectionFour = () => {
             <div className="col-md-6">
               <div className="img-box">
                 <p> before </p>
-                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609835/beforeRaul_p2vuvj.png' alt="metatesk" />
+                <img src={before} alt="metatesk" />
               </div>
             </div>
             <div className="col-md-6">
               <div className="img-box">
               <p> now </p>
-                <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609844/chinaGirl_o5u0kd.png' alt="metatesk" />
+                <img src={girl} alt="metatesk" />
               </div>
             </div>
           </div>

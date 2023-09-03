@@ -1,19 +1,22 @@
 import React from 'react'
+import img1 from './metaImg/Img1.png';
+import img2 from './metaImg/Img2.png';
+import img3 from './metaImg/Img3.png';
 const SectionFive = () => {
 
 
 
   const imgs = [
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609842/Img3_gs0vzw.png',
+      img:img1,
       text:'PC'
     },
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666614856/Img2_gete2g.png',
+      img:img2,
       text:'VR'
     },
     {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609852/Img1_yuxlde.png',
+      img:img3,
       text:'MOBILE'
     },
   ]
