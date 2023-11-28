@@ -30,10 +30,13 @@ const SectionNine = ({setboolean}) => {
         // https://metatesk.herokuapp.com/email/post  http://localhost:5000/email/post
         axios.post('https://enteskcrmserver.azurewebsites.net/post', data)
         .then(function (response) {
-          Swal.fire({
+          
+          setTimeout(() => {
+            Swal.fire({
             color:"green",
             text: "Success",
-          })
+            })
+          }, 3000);
           setDisabled(false)
           setData({
             nameSurname:'',
