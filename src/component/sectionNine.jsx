@@ -36,16 +36,17 @@ const SectionNine = ({setboolean}) => {
             color:"green",
             text: "Success",
             })
+            setDisabled(false)
+            setData({
+              nameSurname:'',
+              Country:'',
+              email:'',
+              whatsAppNumber:"",
+              date:'',
+              time:'',
+            })
           }, 3000);
-          setDisabled(false)
-          setData({
-            nameSurname:'',
-            Country:'',
-            email:'',
-            whatsAppNumber:"",
-            date:'',
-            time:'',
-          })
+          
         })
         .catch(function (error) {
           console.log(error);
