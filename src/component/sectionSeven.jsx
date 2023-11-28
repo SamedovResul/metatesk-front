@@ -24,7 +24,7 @@ const SectionSeven = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="text-box">
-                <h3>Avaliable on</h3>
+                <h3>Available on</h3>
               </div>
             </div>
               {
