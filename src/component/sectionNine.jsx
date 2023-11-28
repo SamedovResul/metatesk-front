@@ -24,7 +24,7 @@ const SectionNine = ({setboolean}) => {
   const submit = (e) =>{
     e.preventDefault()
 
-    if(data.Country && data.email && data.nameSurname && data.date ){
+    if(data.Country && data.email ){
       if(validate(data.email) ){
         setDisabled(true)
         // https://metatesk.herokuapp.com/email/post  http://localhost:5000/email/post
